@@ -5,6 +5,28 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+let lettera = "A"
+
+function equalLetter(array, letter) {
+    
+    const firstLetter = []
+
+    
+
+    for (let i=0; i<array.length; i++){
+
+        primaLettera = array[i].charAt(0).toUpperCase();
+
+        if(primaLettera === letter){
+            
+            firstLetter.push(array[i]);
+        }
+    }
+    return firstLetter
+}
+
+console.log(equalLetter(names, lettera));
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
